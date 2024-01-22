@@ -1,0 +1,52 @@
+{
+  "name": "indunil",
+  "displayName": "Indunil Says",
+  "description": "Discover the next step on yout tech journey",
+  "version": "0.0.1",
+  "icon": "assets/IndunilSays.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "indunil.StartIndunilJoke",
+        "title": "Indunil : Would you like to hear a Joke? [Once every minute]]"
+      },
+      {
+        "command": "indunil.StartIndunilPun",
+        "title": "Indunil : Would you like to hear a Pun? [Once every minute]"
+      },
+      {
+        "command": "indunil.StartIndunilQuote",
+        "title": "Indunil : Do you want to hear famous quotes? [Once every minute]"
+      },
+      {
+        "command": "indunil.StopIndunil",
+        "title": "Indunil : Do you want to stop hearing Indunil?"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
